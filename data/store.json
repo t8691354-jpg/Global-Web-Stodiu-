@@ -1,0 +1,504 @@
+{
+  "packages": [
+    {
+      "id": "starter",
+      "name": "Starter Website",
+      "tagline": "Ideal for startups, solopreneurs, and single-service businesses needing a swift, high-impact presence.",
+      "price": 149,
+      "pagesDescription": "1 to 3 fully responsive pages",
+      "revisions": "2 rounds of structured revisions",
+      "deliveryTime": "3 – 5 business days",
+      "category": "Essential",
+      "description": "Clean, professional digital storefront engineered for speed, mobile responsiveness, and foundational conversion.",
+      "active": true,
+      "includedFeatures": [
+        "1–3 Custom Designed Pages (Home, About, Services/Contact)",
+        "100% Mobile & Tablet Responsive Layout",
+        "Clean Semantic HTML5, CSS & Modern Framework",
+        "Interactive Contact Form with Validation",
+        "Essential On-Page Meta Tag SEO Setup",
+        "Fast Load Time Optimization (< 1.5s target)",
+        "Social Media & Direct WhatsApp / Email Links",
+        "Cross-Browser Testing (Chrome, Safari, Edge, Firefox)",
+        "Deployment to your preferred web host or server"
+      ],
+      "excludedFeatures": [
+        "E-commerce cart and product checkout",
+        "Complex server database / custom backend API",
+        "Third-party automated payment gateway",
+        "Multi-language dynamic translation engine"
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business Website",
+      "tagline": "The complete digital foundation for established companies, professional practices, and corporate brands.",
+      "price": 349,
+      "popular": true,
+      "pagesDescription": "Up to 7–10 structured pages",
+      "revisions": "4 rounds of comprehensive revisions",
+      "deliveryTime": "7 – 10 business days",
+      "category": "Corporate",
+      "description": "A comprehensive, multi-page web platform designed to establish commercial authority, capture inbound leads, and present your services.",
+      "active": true,
+      "includedFeatures": [
+        "Up to 7–10 Custom Pages (Home, About, Detailed Services, Portfolio, FAQ, Blog, Contact, etc.)",
+        "Bespoke Visual Design with Branded Typography & Palette",
+        "Full Responsive Architecture & Micro-Interactions",
+        "Content Management / Blog Structure Setup",
+        "Advanced On-Page Technical SEO & Schema Markup Ready",
+        "Lead Generation Forms with File Upload & Email Routing",
+        "Google Maps & Location Integration",
+        "Google Analytics 4 & Meta Pixel Setup Ready",
+        "Speed & Performance Optimization (Score 90+ Target)",
+        "30 Days Post-Launch Bug Fix Support Guarantee"
+      ],
+      "excludedFeatures": [
+        "Multi-vendor marketplace functionality",
+        "Custom user membership portals with subscription billing",
+        "Third-party ERP or warehousing API synchronization"
+      ]
+    },
+    {
+      "id": "ecommerce",
+      "name": "E-commerce Website",
+      "tagline": "Full-featured online store ready for product sales, catalog browsing, and manual bank/wire checkout.",
+      "price": 699,
+      "pagesDescription": "Full store: Catalog, Product Pages, Cart, Checkout & Policies",
+      "revisions": "5 rounds of detailed revisions",
+      "deliveryTime": "12 – 16 business days",
+      "category": "Commerce",
+      "description": "A robust e-commerce storefront featuring organized product categorization, cart management, manual bank transfer checkout, and order tracking.",
+      "active": true,
+      "includedFeatures": [
+        "Full E-Commerce Catalog & Product Architecture",
+        "Initial Upload & Formatting of up to 25 Sample Products",
+        "Product Filtering, Search, and Category Management",
+        "Shopping Cart & Streamlined Checkout Flow",
+        "Manual Payment Instructions & Bank Transfer Processing Workflow",
+        "Automated Order Confirmation Email Templates",
+        "Customer Account & Order History Interfaces",
+        "Inventory Tracking & Out-of-Stock Badges",
+        "Coupon & Promotional Discount Code Mechanism",
+        "Comprehensive Mobile Optimization for Shoppers",
+        "45 Days Post-Launch Support & Walkthrough Documentation"
+      ],
+      "excludedFeatures": [
+        "Automatic card payment gateway merchant integration (Manual/Bank transfer included)",
+        "Multi-vendor split-payout marketplace architecture",
+        "Custom warehouse robotics automation or SAP ERP direct sync"
+      ]
+    },
+    {
+      "id": "custom",
+      "name": "Custom Web Application",
+      "tagline": "Tailored digital solutions, portals, SaaS MVPs, and complex web workflows tailored to exact specifications.",
+      "price": 1500,
+      "isStartingAt": true,
+      "pagesDescription": "Custom architecture tailored to functional scope",
+      "revisions": "Milestone-based collaborative review cycles",
+      "deliveryTime": "3 – 6 weeks (milestone-based delivery)",
+      "category": "Enterprise",
+      "description": "For companies requiring unique web applications, internal operational dashboards, custom client portals, or specialized interactive tooling.",
+      "active": true,
+      "includedFeatures": [
+        "Bespoke Architecture & Interactive UI/UX Design System",
+        "Custom Database Schema & Secure REST/GraphQL APIs",
+        "Role-Based Access Control (RBAC) & User Management",
+        "Custom Business Logic, Dashboards & Reporting Panels",
+        "Private File Upload & Document Management System",
+        "Staging Environment for Milestone Approvals",
+        "Comprehensive Automated & End-to-End Testing",
+        "Full Source Code Ownership & Deployment Pipeline Setup",
+        "60 Days Dedicated Technical Maintenance & Warranty"
+      ],
+      "excludedFeatures": [
+        "Hardware provisioning or on-premise physical server installation",
+        "Third-party external license fees or premium cloud infrastructure bills"
+      ]
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "demo-aurora-logistics",
+      "title": "Apex Freight & Logistics Portal",
+      "category": "business",
+      "description": "A multi-regional corporate web presence for an international freight and customs forwarding provider. Features fleet specifications, interactive route calculators, and quote request workflows.",
+      "keyFeatures": [
+        "Interactive Route Matrix",
+        "Instant Quote Calculator",
+        "Multi-Office Directory",
+        "Modern Industrial Aesthetics"
+      ],
+      "demoType": "live_demo",
+      "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80",
+      "tags": [
+        "Corporate",
+        "Logistics",
+        "Enterprise"
+      ],
+      "isSample": true
+    },
+    {
+      "id": "demo-lumina-boutique",
+      "title": "Lumina Artisan Goods — E-Commerce Showcase",
+      "category": "ecommerce",
+      "description": "A minimal, editorial e-commerce experience designed for lifestyle goods. Includes category filtering, slide-out cart drawer, and custom bank transfer checkout instructions.",
+      "keyFeatures": [
+        "Dynamic Cart Drawer",
+        "Product Variant Selector",
+        "Manual Wire Transfer Modal",
+        "Lookbook Gallery"
+      ],
+      "demoType": "live_demo",
+      "imageUrl": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=80",
+      "tags": [
+        "E-Commerce",
+        "Retail",
+        "Minimalist"
+      ],
+      "isSample": true
+    },
+    {
+      "id": "demo-vantage-realty",
+      "title": "Vantage Meridian Luxury Real Estate",
+      "category": "real_estate",
+      "description": "A high-aesthetic property showcase demonstrating luxury residential estates with neighborhood guides, floor plan views, and private agent tour bookings.",
+      "keyFeatures": [
+        "Interactive Property Filters",
+        "Floorplan Inspection Tool",
+        "VIP Showing Scheduler",
+        "Virtual Tour Embeds"
+      ],
+      "demoType": "live_demo",
+      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+      "tags": [
+        "Real Estate",
+        "Luxury",
+        "High-Impact"
+      ],
+      "isSample": true
+    },
+    {
+      "id": "demo-saffron-bistro",
+      "title": "Saffron & Salt Culinary Atelier",
+      "category": "restaurants",
+      "description": "Interactive restaurant concept presenting tasting menus, sommelier pairings, private dining requests, and chef bios with rich tactile styling.",
+      "keyFeatures": [
+        "Seasonal Digital Menu",
+        "Private Dining Reservation Form",
+        "Chef Note Journal",
+        "Dietary Filter Badges"
+      ],
+      "demoType": "live_demo",
+      "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+      "tags": [
+        "Hospitality",
+        "Dining",
+        "Reservations"
+      ],
+      "isSample": true
+    },
+    {
+      "id": "demo-novus-health",
+      "title": "Novus Premier Medical & Wellness Clinic",
+      "category": "services",
+      "description": "Specialist medical practice website with practitioner credentials, patient intake guidelines, accepted insurance directory, and confidential consultation requests.",
+      "keyFeatures": [
+        "Practitioner Roster",
+        "Patient Intake Guidelines",
+        "Treatment Directory",
+        "Secure Consultation Form"
+      ],
+      "demoType": "live_demo",
+      "imageUrl": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80",
+      "tags": [
+        "Healthcare",
+        "Services",
+        "Trust-Centered"
+      ],
+      "isSample": true
+    },
+    {
+      "id": "demo-strata-metrics",
+      "title": "Strata Cloud Operations Platform MVP",
+      "category": "custom",
+      "description": "Demonstration of a custom React web app dashboard with telemetry charts, team role permissions, audit trails, and data export facilities.",
+      "keyFeatures": [
+        "Role-Based Layout",
+        "Data Visualization",
+        "Audit Trail UI",
+        "Custom Filter Engine"
+      ],
+      "demoType": "live_demo",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80",
+      "tags": [
+        "Web Application",
+        "SaaS MVP",
+        "Dashboard"
+      ],
+      "isSample": true
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": "askari-bank",
+      "title": "Askari Bank Account Transfer",
+      "type": "bank_transfer",
+      "bankOrProviderName": "Askari Bank Limited",
+      "accountHolderName": "GlobalWeb Studio (Pvt.) Ltd.",
+      "accountNumberOrIban": "0123-098765432101",
+      "swiftBicOrRouting": "ASCPPKKAXXX",
+      "branchName": "Corporate & Commercial Banking Branch",
+      "supportedCurrencies": [
+        "USD",
+        "PKR",
+        "EUR",
+        "GBP"
+      ],
+      "instructions": [
+        "Log into your Askari Bank mobile app, internet banking portal, or visit any Askari Bank branch.",
+        "Select Transfer to Askari Account / Other Bank Transfer.",
+        "Enter the exact Account / IBAN number specified above.",
+        "CRUCIAL: In the Payment Purpose / Remarks field, enter your EXACT Order Reference number (e.g. GWS-2026-XXXXX).",
+        "Confirm the transaction and save or screenshot the official PDF receipt / transaction confirmation.",
+        "Return to this website and upload your transaction receipt in the Payment Proof form."
+      ],
+      "referenceNote": "Always quote your Order Reference in the bank transaction narration.",
+      "enabled": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "wire-transfer",
+      "title": "International Wire / Other Bank Transfer",
+      "type": "other_bank",
+      "bankOrProviderName": "Standard Chartered / International Correspondent Bank",
+      "accountHolderName": "GlobalWeb Studio Treasury Services",
+      "accountNumberOrIban": "GB29 SCBL 0000 1234 5678 90",
+      "swiftBicOrRouting": "SCBLGB2LXXX",
+      "branchName": "International Corporate Treasury Desk",
+      "supportedCurrencies": [
+        "USD",
+        "EUR",
+        "GBP"
+      ],
+      "instructions": [
+        "Instruct your local bank or treasury to initiate an international wire / SEPA / SWIFT transfer.",
+        "Ensure the beneficiary name matches exactly as listed above.",
+        "Provide your bank with the SWIFT/BIC code and IBAN.",
+        "Mandatory: Instruct the sending bank to include your Order Reference in Field 70 (Remittance Information / Narration).",
+        "Wire transfers typically take 1–3 business days to clear depending on correspondent banks.",
+        "Upload the official wire confirmation slip once dispatched."
+      ],
+      "referenceNote": "Bank wire reference field must carry your GWS Order Reference.",
+      "enabled": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "international-remittance",
+      "title": "International Money Transfer (Wise, Remitly, Western Union)",
+      "type": "international_transfer",
+      "bankOrProviderName": "Wise / Remitly / Western Union / Ria",
+      "accountHolderName": "GlobalWeb Studio Operations",
+      "accountNumberOrIban": "wise.account@globalwebstudio.com / IBAN as provided",
+      "swiftBicOrRouting": "TRWIBEBB",
+      "branchName": "Digital Remittance & Cross-Border Desk",
+      "supportedCurrencies": [
+        "USD",
+        "CAD",
+        "AUD",
+        "EUR",
+        "GBP"
+      ],
+      "instructions": [
+        "Open your Wise, Remitly, or preferred transfer service application.",
+        "Select Send Money and choose the exact currency of your order.",
+        "Input the recipient details provided above.",
+        "Ensure the recipient receives the exact invoiced package total in full (sender covers provider transfer fees).",
+        "Enter your Order Reference in the transfer note / reference section.",
+        "Save the transfer receipt showing the MTCN or Transfer Reference number.",
+        "Upload the receipt through our secure proof submission portal."
+      ],
+      "referenceNote": "Enter the provider MTCN or Transaction ID when uploading proof.",
+      "enabled": true,
+      "displayOrder": 3
+    }
+  ],
+  "settings": {
+    "businessName": "GlobalWeb Studio",
+    "tagline": "Precision Web Engineering & International Digital Solutions",
+    "contactEmail": "contact@globalwebstudio.com",
+    "supportEmail": "support@globalwebstudio.com",
+    "phone": "+1 (555) 019-2834",
+    "headquarters": "International Remote Studio • Serving Clients Worldwide",
+    "workingHours": "Monday – Friday, 08:00 – 18:00 UTC",
+    "currency": "USD",
+    "currencySymbol": "$",
+    "orderPrefix": "GWS"
+  },
+  "cashbackSettings": {
+    "enabled": true,
+    "legalTermsAcknowledged": true,
+    "currentWeekBoundaryStart": "2026-10-12T00:00:00.000Z",
+    "currentWeekBoundaryEnd": "2026-10-19T00:00:00.000Z",
+    "timezone": "UTC",
+    "cashbackPercentage": 50,
+    "maxAwardPerWinner": 350,
+    "totalWeeklyBudget": 1000,
+    "allowDualWinner": false,
+    "publishedTerms": "Verified promotional terms."
+  },
+  "orders": [
+    {
+      "id": "ord-1792162572752-524f5de7",
+      "orderRef": "GWS-2026-5U57G",
+      "customerName": "Alexander Vance",
+      "email": "alexander@vanceholdings.com",
+      "country": "United Kingdom",
+      "businessName": "Vance Holdings Ltd",
+      "packageId": "business",
+      "packageName": "Business Website",
+      "packagePrice": 349,
+      "currency": "USD",
+      "projectRequirements": "Complete corporate website with 8 custom pages, client inquiry intake, and brand asset library.",
+      "requiredFeatures": [
+        "Mobile Responsive Design",
+        "Interactive Contact Form with Validation",
+        "SEO Meta Tags & Sitemap Generation"
+      ],
+      "createdAt": "2026-10-16T14:56:12.752Z",
+      "updatedAt": "2026-10-16T14:56:47.715Z",
+      "status": "payment_verified",
+      "verificationStatus": "verified",
+      "proofs": [
+        {
+          "id": "prf-1792162601531-1b6c8d07",
+          "orderRef": "GWS-2026-5U57G",
+          "paymentMethodId": "askari-bank",
+          "amountTransferred": 349,
+          "currency": "USD",
+          "transferDate": "2026-10-16",
+          "transactionReference": "ASKARI-TXN-998822",
+          "fileName": "proof-1792162601526-2f28425bffb85c1e00e8f01a.png",
+          "fileOriginalName": "sample_receipt.png",
+          "fileMimeType": "image/png",
+          "fileSizeBytes": 23,
+          "fileUrl": "/api/orders/GWS-2026-5U57G/proof-file/prf-1792162601531-1b6c8d07",
+          "customerNote": "Transferred from Askari Corporate Account",
+          "submittedAt": "2026-10-16T14:56:41.531Z",
+          "verificationStatus": "verified",
+          "verifiedAt": "2026-10-16T14:56:47.715Z",
+          "verifiedBy": "admin@globalwebstudio.com"
+        }
+      ],
+      "totalPaid": 349,
+      "clientAccessToken": "0b9bb6cac53218b43d42b4686d3edeee50bb6a5fc8ecc355",
+      "activeProofId": "prf-1792162601531-1b6c8d07"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit-1792162629318-nle4c",
+      "timestamp": "2026-10-16T14:57:09.318Z",
+      "action": "CASHBACK_DRAW_LOCKED",
+      "actor": "admin@globalwebstudio.com",
+      "targetType": "promo",
+      "targetId": "draw-1792162629317-659dea",
+      "details": "Weekly cashback draw locked. Total liability: $349. Random Winner: GWS-2026-5U57G ($174.5), Top Buyer: GWS-2026-5U57G ($174.5)."
+    },
+    {
+      "id": "audit-1792162612743-1ltta",
+      "timestamp": "2026-10-16T14:56:52.743Z",
+      "action": "CASHBACK_CONFIG_UPDATED",
+      "actor": "admin@globalwebstudio.com",
+      "targetType": "promo",
+      "targetId": "config",
+      "details": "Cashback promotion settings updated. Enabled: true, Percentage: 50%, Budget: $1000."
+    },
+    {
+      "id": "audit-1792162607716-69nf4",
+      "timestamp": "2026-10-16T14:56:47.716Z",
+      "action": "PAYMENT_VERIFIED",
+      "actor": "admin@globalwebstudio.com",
+      "targetType": "order",
+      "targetId": "GWS-2026-5U57G",
+      "details": "Manual bank payment verified by Studio Finance Director. Verified amount: $349. Notes: Confirmed on Askari Bank statement reference ASKARI-TXN-998822"
+    },
+    {
+      "id": "audit-1792162601531-zyd3y",
+      "timestamp": "2026-10-16T14:56:41.531Z",
+      "action": "PAYMENT_PROOF_SUBMITTED",
+      "actor": "alexander@vanceholdings.com",
+      "targetType": "proof",
+      "targetId": "prf-1792162601531-1b6c8d07",
+      "details": "Proof submitted for Order GWS-2026-5U57G. Amount: USD 349, TxRef: \"ASKARI-TXN-998822\". Awaiting admin manual verification."
+    },
+    {
+      "id": "audit-1792162588949-mw0pd",
+      "timestamp": "2026-10-16T14:56:28.949Z",
+      "action": "ADMIN_LOGIN_SUCCESS",
+      "actor": "admin@globalwebstudio.com",
+      "targetType": "settings",
+      "targetId": "admin-master-1",
+      "details": "Admin authenticated successfully from session token [fbf6cac3...]"
+    },
+    {
+      "id": "audit-1792162572753-vqdp3",
+      "timestamp": "2026-10-16T14:56:12.753Z",
+      "action": "ORDER_CREATED",
+      "actor": "alexander@vanceholdings.com",
+      "targetType": "order",
+      "targetId": "GWS-2026-5U57G",
+      "details": "Order created for package \"Business Website\" ($349). Status: awaiting_payment."
+    },
+    {
+      "id": "audit-1792162550616-init",
+      "timestamp": "2026-10-16T14:55:50.616Z",
+      "action": "SYSTEM_INITIALIZED",
+      "actor": "system",
+      "targetType": "settings",
+      "targetId": "system",
+      "details": "GlobalWeb Studio core database initialized with default packages and payment methods."
+    }
+  ],
+  "promoDraws": [
+    {
+      "id": "draw-1792162629317-659dea",
+      "weekStart": "2026-10-12T00:00:00.000Z",
+      "weekEnd": "2026-10-19T00:00:00.000Z",
+      "drawDate": "2026-10-16T14:57:09.317Z",
+      "randomDrawWinner": {
+        "orderRef": "GWS-2026-5U57G",
+        "customerName": "Alexander Vance",
+        "orderAmount": 349,
+        "cashbackAwarded": 174.5
+      },
+      "highestValueWinner": {
+        "orderRef": "GWS-2026-5U57G",
+        "customerName": "Alexander Vance",
+        "orderAmount": 349,
+        "cashbackAwarded": 174.5
+      },
+      "totalCashbackAwarded": 349,
+      "isLocked": true,
+      "published": true,
+      "drawSeedOrProof": "ba73d39d483a745e2fe9a70cfb86424b",
+      "auditNote": "Verified by Finance Director against Askari statement.",
+      "payoutStatus": {
+        "randomWinnerPaid": false,
+        "highestWinnerPaid": false
+      }
+    }
+  ],
+  "contactInquiries": [],
+  "adminUsers": [
+    {
+      "id": "admin-master-1",
+      "email": "admin@globalwebstudio.com",
+      "name": "Studio Finance Director",
+      "passwordHash": "4c92ba2d14ff846036054b7715f1af69baa28f3754a543729e74d047eec0cdf3e6994038f3237abb2f34ed8edd4ded84f6996637edac41b1aed25676e4cfa31a",
+      "salt": "gws_secure_salt_2026",
+      "role": "super_admin"
+    }
+  ]
+}
