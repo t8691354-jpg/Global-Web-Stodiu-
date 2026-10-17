@@ -73,6 +73,9 @@ interface AgencyContextType {
   toasts: Toast[];
   showToast: (message: string, type?: 'success' | 'error' | 'info') => void;
   dismissToast: (id: string) => void;
+
+  isAndroidModalOpen: boolean;
+  setIsAndroidModalOpen: (open: boolean) => void;
 }
 
 const AgencyContext = createContext<AgencyContextType | undefined>(undefined);
@@ -92,6 +95,7 @@ export const AgencyProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
   const [adminUser, setAdminUser] = useState<any | null>(null);
   const [toasts, setToasts] = useState<Toast[]>([]);
+  const [isAndroidModalOpen, setIsAndroidModalOpen] = useState(false);
 
   const showToast = (message: string, type: 'success' | 'error' | 'info' = 'info') => {
     const id = `toast-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`;
@@ -220,6 +224,8 @@ export const AgencyProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         toasts,
         showToast,
         dismissToast,
+        isAndroidModalOpen,
+        setIsAndroidModalOpen,
       }}
     >
       {children}

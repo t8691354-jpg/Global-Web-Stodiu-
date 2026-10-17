@@ -22,10 +22,11 @@ import {
   CalendarCheck,
   BookOpen,
   Rocket,
+  Smartphone,
 } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
-  const { packages, portfolio, selectPackageAndOrder, setCurrentPage, settings, cashbackPromo } = useAgency();
+  const { packages, portfolio, selectPackageAndOrder, setCurrentPage, settings, cashbackPromo, setIsAndroidModalOpen } = useAgency();
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   // Icon mapping for categories
@@ -102,6 +103,14 @@ export const HomePage: React.FC = () => {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-800 transition"
               >
                 <span>Explore Packages from $149</span>
+              </button>
+
+              <button
+                onClick={() => setIsAndroidModalOpen(true)}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 transition shadow-lg shadow-emerald-500/10"
+              >
+                <Smartphone className="w-4 h-4 text-emerald-400" />
+                <span>Android App (APK / PWA)</span>
               </button>
             </div>
 

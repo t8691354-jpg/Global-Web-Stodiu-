@@ -46,6 +46,70 @@ function getAdminToken(): string | null {
   return localStorage.getItem('gws_admin_token');
 }
 
+/**
+ * Resolves the API base URL according to the active runtime environment.
+ * - In standard web browsers: uses relative '/api'.
+ * - In Capacitor native Android WebView: routes to the deployed backend URL or custom configured server.
+ */
+export function getApiBaseUrl(): string {
+  // 1. Explicit environment variable if provided
+  if (import.meta.env.VITE_API_BASE_URL) {
+    return import.meta.env.VITE_API_BASE_URL.replace(/\/+$/, '');
+  }
+  if (import.meta.env.VITE_APP_URL) {
+    return `${import.meta.env.VITE_APP_URL.replace(/\/+$/, '')}/api`;
+  }
+
+  // 2. Detect native Capacitor Android platform
+  if (typeof window !== 'undefined') {
+    const isCapacitorNative =
+      Boolean((window as any).Capacitor?.isNativePlatform?.()) ||
+      window.location.protocol === 'capacitor:' ||
+      window.location.protocol === 'ionic:' ||
+      (window.location.hostname === 'localhost' && window.location.port === '');
+
+    if (isCapacitorNative) {
+      const stored = localStorage.getItem('gws_remote_api_url');
+      if (stored) {
+        return `${stored.replace(/\/+$/, '')}/api`;
+      }
+      // Deployed cloud backend URL for this applet
+      return 'https://ais-dev-5dgumvik67yimhj6ohwxvr-625688551638.asia-southeast1.run.app/api';
+    }
+  }
+
+  // 3. Standard web browser preview and production
+  return '/api';
+}
+
+export function apiUrl(endpoint: string): string {
+  const base = getApiBaseUrl();
+  const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+
+  if (cleanEndpoint.startsWith('/api/') && base.endsWith('/api')) {
+    return `${base}${cleanEndpoint.slice(4)}`;
+  }
+  if (cleanEndpoint === '/api' && base.endsWith('/api')) {
+    return base;
+  }
+  if (cleanEndpoint.startsWith('/api')) {
+    return `${base}${cleanEndpoint.slice(4)}`;
+  }
+  return `${base}${cleanEndpoint}`;
+}
+
+// Automatically intercept relative '/api' fetch calls when running on native Android devices
+if (typeof window !== 'undefined' && !((window as any).__gws_fetch_intercepted__)) {
+  (window as any).__gws_fetch_intercepted__ = true;
+  const originalFetch = window.fetch;
+  window.fetch = function (input: RequestInfo | URL, init?: RequestInit) {
+    if (typeof input === 'string' && input.startsWith('/api')) {
+      return originalFetch(apiUrl(input), init);
+    }
+    return originalFetch(input, init);
+  };
+}
+
 export const api = {
   // Public
   async getConfig(): Promise<PublicConfigResponse> {

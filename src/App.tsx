@@ -16,12 +16,20 @@ import { CustomProjectRequestPage } from './components/custom/CustomProjectReque
 import { ClientPortalPage } from './components/custom/ClientPortalPage';
 import { QuotationViewPage } from './components/custom/QuotationViewPage';
 import { PricingCatalogPage } from './components/catalog/PricingCatalogPage';
+import { AndroidAppModal } from './components/common/AndroidAppModal';
+import { MobileBottomNav } from './components/common/MobileBottomNav';
+import { PWAInstallButton } from './components/common/PWAInstallButton';
+import { OfflineIndicator } from './components/common/OfflineIndicator';
 
 const MainContent: React.FC = () => {
-  const { currentPage } = useAgency();
+  const { currentPage, isAndroidModalOpen, setIsAndroidModalOpen } = useAgency();
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-950 text-slate-100 font-['Plus_Jakarta_Sans']">
+    <div className="flex flex-col min-h-screen bg-slate-950 text-slate-100 font-['Plus_Jakarta_Sans'] pb-16 md:pb-0">
+      <OfflineIndicator />
+      {/* Android PWA Install Top Notification Bar */}
+      <PWAInstallButton variant="banner" onOpenAndroidHub={() => setIsAndroidModalOpen(true)} />
+
       <Navbar />
 
       <main className="flex-1">
@@ -42,6 +50,17 @@ const MainContent: React.FC = () => {
 
       {/* Show footer on all pages except inside the specialized admin dashboard */}
       {currentPage !== 'admin' && <Footer />}
+
+      {/* Android Mobile Ergonomic Bottom Navigation Bar */}
+      {currentPage !== 'admin' && (
+        <MobileBottomNav onOpenAndroidHub={() => setIsAndroidModalOpen(true)} />
+      )}
+
+      {/* Android Application Hub Modal */}
+      <AndroidAppModal
+        isOpen={isAndroidModalOpen}
+        onClose={() => setIsAndroidModalOpen(false)}
+      />
 
       <ToastContainer />
     </div>

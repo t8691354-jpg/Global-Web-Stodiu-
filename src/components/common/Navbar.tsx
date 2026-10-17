@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAgency, NavigationPage } from '../../context/AgencyContext';
+import { PWAInstallButton } from './PWAInstallButton';
 import {
   Globe,
   Menu,
@@ -8,10 +9,11 @@ import {
   ShieldCheck,
   Search,
   Sparkles,
+  Smartphone,
 } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
-  const { currentPage, setCurrentPage, settings, isAdminLoggedIn } = useAgency();
+  const { currentPage, setCurrentPage, settings, isAdminLoggedIn, setIsAndroidModalOpen } = useAgency();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks: { label: string; page: NavigationPage }[] = [
@@ -75,8 +77,10 @@ export const Navbar: React.FC = () => {
             })}
           </nav>
 
-          {/* Desktop Action Buttons */}
+          {/* Desktop CTA & App Actions */}
           <div className="hidden lg:flex items-center gap-3">
+            <PWAInstallButton onOpenAndroidHub={() => setIsAndroidModalOpen(true)} />
+
             {isAdminLoggedIn ? (
               <button
                 onClick={() => handleNav('admin')}
@@ -141,6 +145,16 @@ export const Navbar: React.FC = () => {
             </button>
           ))}
           <div className="pt-4 border-t border-slate-900 space-y-2">
+            <button
+              onClick={() => {
+                setIsAndroidModalOpen(true);
+                setMobileMenuOpen(false);
+              }}
+              className="w-full py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs font-bold text-emerald-300 bg-emerald-500/15 border border-emerald-500/30 shadow-md"
+            >
+              <Smartphone className="w-4 h-4 text-emerald-400" />
+              <span>Install Android App (APK / PWA)</span>
+            </button>
             <button
               onClick={() => handleNav('order')}
               className="w-full py-3 rounded-xl text-center font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-teal-300 shadow-lg"
